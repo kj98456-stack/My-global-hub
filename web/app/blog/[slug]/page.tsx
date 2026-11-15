@@ -8,6 +8,14 @@ import type { Metadata } from "next";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
+export function generateStaticParams() {
+  if (!fs.existsSync(postsDirectory)) return [];
+  return fs
+    .readdirSync(postsDirectory)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => ({ slug: f.replace(/\.md$/, "") }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -19,13 +27,8 @@ export async function generateMetadata({
   const { data } = matter(fileContents);
 
   return {
-    title: `${data.title} | Creator & Tech Hub`,
-    description: data.description,
-    robots: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-    },
+    title: `${data.title || slug} | Creator & Tech Hub`,
+    description: data.description || "",
   };
 }
 
@@ -51,12 +54,12 @@ export default async function BlogPost({
 
         <header className="space-y-3 border-b border-slate-800 pb-6">
           <span className="text-xs uppercase tracking-wider text-indigo-400 font-semibold">
-            {data.category} • {data.date}
+            {data.category || "Guides"} • {data.date ? String(data.date).slice(0, 10) : "2026-11-15"}
           </span>
           <h1 className="text-3xl md:text-4xl font-bold leading-tight text-white">
-            {data.title}
+            {data.title || slug}
           </h1>
-          <p className="text-slate-400 text-lg">{data.description}</p>
+          <p className="text-slate-400 text-lg">{data.description || ""}</p>
         </header>
 
         <div
