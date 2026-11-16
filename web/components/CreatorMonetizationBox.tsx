@@ -20,7 +20,7 @@ export default function CreatorMonetizationBox() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a
-          href="https://www.amazon.in/s?k=wireless+lavalier+microphone+for+youtube&tag=YOUR-TAG-21"
+          href="https://www.amazon.in/s?k=wireless+lavalier+microphone+for+youtube&tag=myglobalhub-21"
           target="_blank"
           rel="noopener noreferrer sponsored"
           className="group p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-500/50 transition flex flex-col justify-between space-y-3"
