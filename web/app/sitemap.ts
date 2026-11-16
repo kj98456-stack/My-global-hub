@@ -14,6 +14,8 @@ export default function sitemap() {
     { url: baseUrl, lastModified: new Date() },
     { url: baseUrl + "/tools/thumbnail-previewer", lastModified: new Date() },
     { url: baseUrl + "/tools/youtube-seo-analyzer", lastModified: new Date() },
+    { url: baseUrl + "/tools/image-compressor", lastModified: new Date() },
+    { url: baseUrl + "/tools/revenue-calculator", lastModified: new Date() },
     { url: baseUrl + "/about", lastModified: new Date() },
     { url: baseUrl + "/contact", lastModified: new Date() },
     { url: baseUrl + "/privacy-policy", lastModified: new Date() },
