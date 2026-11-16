@@ -1,4 +1,5 @@
 "use client";
+import CreatorMonetizationBox from "@/components/CreatorMonetizationBox";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -103,7 +104,8 @@ export default function YouTubeSeoAnalyzer() {
             {copied ? "Copied Full Metadata Pack!" : "Copy Optimized Title, Description & Tags"}
           </button>
         </div>
-      </div>
+              <CreatorMonetizationBox />
+</div>
     </div>
   );
 }

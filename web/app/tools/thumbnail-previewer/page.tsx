@@ -1,4 +1,5 @@
 "use client";
+import CreatorMonetizationBox from "@/components/CreatorMonetizationBox";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -132,7 +133,8 @@ export default function ThumbnailPreviewer() {
             </div>
           </div>
         </div>
-      </div>
+              <CreatorMonetizationBox />
+</div>
     </div>
   );
 }
