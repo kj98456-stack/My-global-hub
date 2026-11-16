@@ -47,6 +47,7 @@ export default function HomePage() {
               <h3 className="text-lg font-bold text-white">Thumbnail & Title Mobile Previewer</h3>
               <p className="text-sm text-slate-400">Test how your thumbnail and title look on mobile and desktop feeds before publishing.</p>
             </Link>
+            <Link href="/tools/youtube-seo-analyzer" className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition space-y-2"><span className="text-xs font-semibold text-emerald-400 uppercase">SEO Utility</span><h3 className="text-lg font-bold text-white">YouTube Title, Description & Tag Analyzer</h3><p className="text-sm text-slate-400">Check mobile title cutoff, 125-char description hook, and 500-char tag limits instantly.</p></Link>
           </div>
         </section>
         <section className="space-y-4">
