@@ -25,21 +25,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513818639857688" crossOrigin="anonymous" /></head>
       <body className="min-h-full flex flex-col">{children}</body>
-    </html<html lang="en">
-      <head>
-          <script
-                async
-                      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513818639857688"
-                            crossOrigin="anonymous"
-                                />
-                                  </head>
-                                    <body
-                                        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-                                          >
-                                              {children}
-                                                </body>
-                                                </html>
-                                                >git checkout web/app/layout.tsx && node -e 'const fs=require("fs");let c=fs.readFileSync("web/app/layout.tsx","utf8");c=c.replace("<body",`<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513818639857688" crossOrigin="anonymous" /></head>\n      <body`);fs.writeFileSync("web/app/layout.tsx",c);'
-                                                
+    </html>
   );
 }
