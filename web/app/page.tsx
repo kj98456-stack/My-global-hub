@@ -63,7 +63,7 @@ export default function HomePage() {
               Merge, split, rotate, and convert PDFs locally in your browser with zero file uploads.
             </p>
           </a>
-          https://pdf.myglobalhubtools.com
+        
         </section>
         <section className="space-y-4">
           <h2 className="text-xl font-bold flex items-center gap-2 text-white"><BookOpen className="w-5 h-5 text-emerald-400" /> Latest Articles & Guides</h2>
