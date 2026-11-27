@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export default function sitemap() {
-  const baseUrl = "https://my-global-hub-six.vercel.app";
+  const baseUrl = "https://myglobalhubtools.com";
   const postsDir = path.join(process.cwd(), "content/posts");
   const postUrls = fs.existsSync(postsDir)
     ? fs.readdirSync(postsDir).filter((f) => f.endsWith(".md")).map((f) => ({
