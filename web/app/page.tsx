@@ -49,6 +49,21 @@ export default function HomePage() {
             </Link>
             <Link href="/tools/youtube-seo-analyzer" className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition space-y-2"><span className="text-xs font-semibold text-emerald-400 uppercase">SEO Utility</span><h3 className="text-lg font-bold text-white">YouTube Title, Description & Tag Analyzer</h3><p className="text-sm text-slate-400">Check mobile title cutoff, 125-char description hook, and 500-char tag limits instantly.</p></Link><Link href="/tools/image-compressor" className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition space-y-2"><span className="text-xs font-semibold text-amber-400 uppercase">Image Utility</span><h3 className="text-lg font-bold text-white">Thumbnail & Image Compressor (&lt;2MB)</h3><p className="text-sm text-slate-400">Compress PNG/JPG thumbnails locally in your browser to meet YouTube&apos;s 2MB limit.</p></Link><Link href="/tools/revenue-calculator" className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition space-y-2"><span className="text-xs font-semibold text-purple-400 uppercase">Creator Finance</span><h3 className="text-lg font-bold text-white">YouTube AdSense & Sponsorship Calculator</h3><p className="text-sm text-slate-400">Calculate estimated monthly AdSense revenue (USD/INR) and brand deal rates.</p></Link>
           </div>
+          <a
+            href="https://pdf.myglobalhubtools.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-sky-400/60 transition block"
+          >
+            <span className="text-xs font-semibold text-sky-400">PDF STUDIO</span>
+            <h3 className="text-lg font-bold text-white mt-1">
+              Private Local PDF &amp; Document Studio
+            </h3>
+            <p className="text-sm text-slate-400 mt-1">
+              Merge, split, rotate, and convert PDFs locally in your browser with zero file uploads.
+            </p>
+          </a>
+          https://pdf.myglobalhubtools.com
         </section>
         <section className="space-y-4">
           <h2 className="text-xl font-bold flex items-center gap-2 text-white"><BookOpen className="w-5 h-5 text-emerald-400" /> Latest Articles & Guides</h2>
